@@ -16,7 +16,7 @@ export default function Certifications() {
       <div className="container">
         <SectionHeading eyebrow="certifications" title="Licenses &" highlight="Certifications" />
 
-        <div className="cards-grid">
+        <div className="certifications-grid">
           {certifications.map((cert, i) => (
             <Reveal key={cert.title} delay={i * 0.06}>
               <article className="card item-card cert-card-full">

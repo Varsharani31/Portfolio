@@ -29,14 +29,17 @@ export default function Projects() {
           </div>
         </Reveal>
 
-        <div className="cards-grid">
+        <div className="projects-grid">
           {visible.map((proj, i) => (
             <Reveal key={proj.title} delay={i * 0.06}>
               <article className={`card item-card ${proj.featured ? "featured-card" : ""}`}>
                 {proj.featured && (
-                  <div className="featured-badge">
-                    <span className="featured-dot" />
-                    {proj.badge || "Featured Project"}
+                  <div className="project-badges">
+                    <div className="featured-badge">
+                      <span className="featured-dot" />
+                      {proj.badge || "Featured Project"}
+                    </div>
+                    <div className="project-status-badge">Currently Working</div>
                   </div>
                 )}
                 <div className="project-media">{proj.title.slice(0, 2).toUpperCase()}</div>

@@ -7,9 +7,9 @@ export default function Internships() {
   return (
     <section id="internships">
       <div className="container">
-        <SectionHeading eyebrow="experience" title="Work" highlight="Experience" />
+        <SectionHeading eyebrow="experience" title="Experience &" highlight="Internships" />
 
-        <div className="cards-grid">
+        <div className="experience-grid">
           {internships.map((job, i) => (
             <Reveal key={job.role} delay={i * 0.08}>
               <article className="card item-card">
