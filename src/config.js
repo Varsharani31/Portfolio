@@ -1,0 +1,1 @@
+export const web3formsKey = "REPLACE_WITH_YOUR_WEB3FORMS_ACCESS_KEY";

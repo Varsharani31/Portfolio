@@ -1,0 +1,6 @@
+{
+  "name": "varsharani-kasliwal",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
+}
