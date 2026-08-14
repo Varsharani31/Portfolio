@@ -1,4 +1,4 @@
-import { aboutPoints, stats, profile } from "../data/portfolio";
+import { aboutPoints, strengths, profile } from "../data/portfolio";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 import { CodeIcon, DesignIcon, TeamIcon, GrowthIcon } from "./Icons";
@@ -15,15 +15,10 @@ export default function About() {
           <Reveal delay={0.05}>
             <div className="card about-card">
               <h3>
-                A final year <span className="gradient-text">Computer Engineering</span> student
+                A <span className="gradient-text">Computer Engineering</span> student
               </h3>
               <div className="about-text">
-                <p>{profile.description}</p>
-                <p>
-                  I enjoy taking ownership of features from idea to deployment — designing clean UI,
-                  writing readable code and testing what I build. My internships and projects have taught
-                  me to adapt quickly, communicate clearly and ship under deadlines.
-                </p>
+                <p>{profile.aboutDetailed}</p>
                 <p>
                   Beyond code, I enjoy reading about <strong>AI &amp; machine learning</strong> and
                   sharpening my skills through <strong>hands-on practice</strong> — I recently completed
@@ -54,13 +49,24 @@ export default function About() {
         </div>
 
         <Reveal delay={0.1}>
-          <div className="stats">
-            {stats.map((s) => (
-              <div key={s.label} className="card stat">
-                <div className="stat-num">{s.value}</div>
-                <div className="stat-label">{s.label}</div>
-              </div>
-            ))}
+          <div className="strengths-section">
+            <h3 className="strengths-title">Strengths</h3>
+            <div className="strengths-grid">
+              {strengths.map((s) => {
+                const Icon = pointIcons[s.icon];
+                return (
+                  <div key={s.title} className="card about-point">
+                    <span className="point-icon">
+                      <Icon />
+                    </span>
+                    <div>
+                      <h4>{s.title}</h4>
+                      <p>{s.desc}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </Reveal>
       </div>

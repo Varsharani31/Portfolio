@@ -1,17 +1,12 @@
 import { useEffect, useState } from "react";
-import { profile, heroMeta } from "../data/portfolio";
-import { LocationIcon, GraduationIcon, SparkleIcon } from "./Icons";
-
-const metaIcons = {
-  location: LocationIcon,
-  graduation: GraduationIcon,
-  sparkle: SparkleIcon,
-};
+import { profile } from "../data/portfolio";
+import { GithubIcon, LinkedinIcon, MailIcon, DownloadIcon } from "./Icons";
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0);
   const [sub, setSub] = useState("");
   const [deleting, setDeleting] = useState(false);
+  const [imgError, setImgError] = useState(false);
 
   useEffect(() => {
     const role = profile.roles[roleIndex];
@@ -39,9 +34,9 @@ export default function Hero() {
         <div>
           <span className="hero-tag">Available — {profile.tagline}</span>
           <h1>
-            Varsharani
-            <br />
-            <span className="gradient-text">Kasliwal</span>
+            Hi, I&apos;m{" "}
+            <span className="gradient-text">{profile.firstName}</span>
+            <span className="hero-wave" aria-hidden="true"> 👋</span>
           </h1>
           <div className="hero-role">
             <span className="typing">{sub}</span>
@@ -51,23 +46,26 @@ export default function Hero() {
 
           <div className="hero-actions">
             <a href="#projects" className="btn btn-primary">
-              View My Work
+              View My Projects
+            </a>
+            <a href="/resume.pdf" download="Varsharani_Kasliwal_Resume.html" className="btn btn-outline">
+              <DownloadIcon /> Download Resume
             </a>
             <a href="#contact" className="btn btn-outline">
-              Let&apos;s Connect
+              Contact Me
             </a>
           </div>
 
-          <div className="hero-meta">
-            {heroMeta.map((m) => {
-              const Icon = metaIcons[m.icon];
-              return (
-                <span key={m.icon}>
-                  <Icon />
-                  {m.text}
-                </span>
-              );
-            })}
+          <div className="hero-socials">
+            <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="hero-social-link" aria-label="LinkedIn">
+              <LinkedinIcon />
+            </a>
+            <a href={profile.github} target="_blank" rel="noopener noreferrer" className="hero-social-link" aria-label="GitHub">
+              <GithubIcon />
+            </a>
+            <a href={`mailto:${profile.email}`} className="hero-social-link" aria-label="Email">
+              <MailIcon />
+            </a>
           </div>
         </div>
 
@@ -77,7 +75,17 @@ export default function Hero() {
           <div className="hero-orb three" />
           <div className="avatar-ring">
             <div className="avatar-inner">
-              <span className="initials">{profile.initials}</span>
+              {!imgError ? (
+                <img
+                  src={profile.photo}
+                  alt="Varsharani Kasliwal — Profile Photo"
+                  className="avatar-photo"
+                  onError={() => setImgError(true)}
+                  loading="eager"
+                />
+              ) : (
+                <span className="initials">{profile.initials}</span>
+              )}
             </div>
           </div>
         </div>

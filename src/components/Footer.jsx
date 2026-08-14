@@ -1,7 +1,7 @@
 import { navLinks, profile, contact, footerNote } from "../data/portfolio";
-import { LinkedinIcon, GithubIcon, CodeIcon } from "./Icons";
+import { LinkedinIcon, GithubIcon } from "./Icons";
 
-const socialIcons = { linkedin: LinkedinIcon, github: GithubIcon, code: CodeIcon };
+const socialIcons = { linkedin: LinkedinIcon, github: GithubIcon };
 
 const year = new Date().getFullYear();
 
@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-inner">
         <p>
-          © {year} <span className="gradient-text">{profile.name}</span>. {footerNote}.
+          &copy; {year} <span className="gradient-text">{profile.name}</span>. {footerNote}.
         </p>
 
         <div className="footer-links">

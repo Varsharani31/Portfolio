@@ -501,6 +501,37 @@ section {
   color: var(--accent);
 }
 
+.hero-socials {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.hero-social-link {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  transition: all 0.28s ease;
+}
+
+.hero-social-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.hero-social-link:hover {
+  color: #fff;
+  border-color: transparent;
+  background: var(--gradient);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(139, 92, 246, 0.4);
+}
+
 .hero-visual {
   position: relative;
   display: flex;
@@ -510,12 +541,13 @@ section {
 
 .avatar-ring {
   position: relative;
-  width: min(360px, 80vw);
+  width: min(420px, 78vw);
   aspect-ratio: 1;
   border-radius: 50%;
   background: var(--gradient);
   padding: 6px;
   animation: float 6s ease-in-out infinite;
+  box-shadow: 0 18px 50px rgba(139, 92, 246, 0.35);
 }
 
 @keyframes float {
@@ -529,7 +561,7 @@ section {
   border-radius: 50%;
   background:
     radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.08), transparent 45%),
-    linear-gradient(160deg, #141a30, #0a0e1c);
+    linear-gradient(160deg, #f4f4f4, #d8dbe4);
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -544,6 +576,15 @@ section {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   user-select: none;
+}
+
+.avatar-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 18%;
+  transform: scale(1.08);
 }
 
 @keyframes spin {
@@ -1446,4 +1487,130 @@ section {
 
 .back-top:hover {
   transform: translateY(-4px);
+}
+
+/* Featured project card */
+.featured-card {
+  border-color: var(--border-strong) !important;
+  position: relative;
+}
+
+.featured-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: var(--radius);
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.4), rgba(168, 85, 247, 0.4), rgba(34, 211, 238, 0.3));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.featured-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--font-code);
+  color: var(--accent);
+  background: rgba(34, 211, 238, 0.08);
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  margin-bottom: 0.5rem;
+}
+
+.featured-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Education duration */
+.edu-duration {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-family: var(--font-code);
+  margin-bottom: 0.35rem;
+}
+
+/* Strengths section */
+.strengths-section {
+  margin-top: 3rem;
+}
+
+.strengths-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 560px) {
+  .strengths-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Certificate images */
+.cert-note {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 2rem;
+  padding: 1rem 1.2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+
+.cert-note code {
+  color: var(--accent);
+  font-family: var(--font-code);
+  font-size: 0.82rem;
+  background: rgba(99, 102, 241, 0.12);
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+.cert-card-full {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.cert-image-wrap {
+  width: 100%;
+  height: 220px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #f7f7f7;
+  display: grid;
+  place-items: center;
+  padding: 0.5rem;
+}
+
+.cert-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 10px;
+  transition: transform 0.35s ease;
+}
+
+.cert-card-full:hover .cert-image {
+  transform: scale(1.04);
 }

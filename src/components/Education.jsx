@@ -17,6 +17,9 @@ export default function Education() {
                   <span className="pill pill-highlight">{edu.status}</span>
                 </div>
                 <div className="edu-school">{edu.school}</div>
+                {edu.duration && (
+                  <div className="edu-duration">{edu.duration}</div>
+                )}
                 <p className="edu-detail">{edu.detail}</p>
                 <div style={{ marginTop: "0.9rem" }}>
                   <span className="pill">{edu.grade}</span>

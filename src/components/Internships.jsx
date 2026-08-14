@@ -7,7 +7,7 @@ export default function Internships() {
   return (
     <section id="internships">
       <div className="container">
-        <SectionHeading eyebrow="internships" title="Work" highlight="Experience" />
+        <SectionHeading eyebrow="experience" title="Work" highlight="Experience" />
 
         <div className="cards-grid">
           {internships.map((job, i) => (

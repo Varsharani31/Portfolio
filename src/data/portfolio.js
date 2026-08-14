@@ -1,84 +1,94 @@
 export const profile = {
-  name: "Varsharani Pavan Kumar Kasliwal",
+  name: "Varsharani Kasliwal",
   firstName: "Varsharani",
   initials: "VK",
-  roles: ["Computer Engineering Student", "Frontend Developer", "Python Developer", "Quick Learner"],
-  tagline: "Final Year B.E. Computer Engineering",
+  roles: [
+    "Computer Engineering Student",
+    "UI/UX Enthusiast",
+    "Tech Learner",
+    "Creative Problem Solver",
+  ],
+  tagline: "Computer Engineering Student | UI/UX Enthusiast | Tech Learner",
   intro:
-    "Hi, I'm Varsharani — a passionate, result-driven engineering student who loves turning ideas into clean, responsive web experiences.",
+    "Hi, I'm Varsharani — a Computer Engineering student passionate about creating useful and engaging digital experiences.",
   description:
-    "I'm a final-year Computer Engineering student with hands-on experience in web development, Python and AI-based internships. I enjoy clean UI design, efficient problem solving and reliable software. Currently looking for internships and fresher roles where I can learn, contribute and grow.",
+    "I love turning ideas into simple, useful and engaging digital experiences while continuously learning and exploring new technologies. I enjoy UI/UX design, web technologies, AI/ML and building practical software projects that solve real-world problems.",
+  aboutDetailed:
+    "I am a Computer Engineering student passionate about creating useful and engaging digital experiences. I enjoy exploring UI/UX design, web technologies, AI/ML and practical software projects. I am continuously learning new technologies and building projects that solve real-world problems.",
   highlights: [
     { label: "Based in", value: "Kharepatan, Maharashtra" },
     { label: "Degree", value: "B.E. Computer Engineering" },
-    { label: "Focus", value: "Full-Stack Web Development" },
+    { label: "CGPA", value: "7.91 / 10" },
   ],
   email: "ranikasliwal7@gmail.com",
   phone: "+91 93223 00188",
   location: "Kharepatan, Maharashtra, India",
   linkedin: "https://linkedin.com/in/varsharani-kasliwal-859271287/",
   github: "https://github.com/Varsharani31",
-  leetcode: "https://leetcode.com/varsharani-kasliwal",
   available: "Open to internships & fresher roles",
+  photo: "/profile.jpeg",
 };
 
-export const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Education", href: "#education" },
-  { label: "Skills", href: "#skills" },
-  { label: "Internships", href: "#internships" },
-  { label: "Projects", href: "#projects" },
-  { label: "Certifications", href: "#certifications" },
-  { label: "Resume", href: "#resume" },
-  { label: "Contact", href: "#contact" },
-];
-
-export const heroMeta = [
-  { icon: "location", text: "Kharepatan, Maharashtra" },
-  { icon: "graduation", text: "B.E. (Computer Engineering)" },
-  { icon: "sparkle", text: "Open to work" },
-];
-
-export const marqueeTech = [
-  "React", "JavaScript", "HTML5", "CSS3", "Node.js", "MongoDB", "Python",
-  "Java", "Android Studio", "GitHub", "Responsive Design", "Problem Solving",
-];
-
-export const aboutPoints = [
+export const strengths = [
   { icon: "code", title: "Clean Code", desc: "Readable, maintainable, well-structured code" },
   { icon: "design", title: "Responsive UI", desc: "Mobile-first, accessible interfaces" },
   { icon: "growth", title: "Quick Learner", desc: "Self-learning through hands-on practice" },
   { icon: "team", title: "Team Player", desc: "Adaptable, good listener, easy to work with" },
 ];
 
-export const stats = [
-  { value: "4+", label: "Projects Built" },
-  { value: "2", label: "Internships Done" },
-  { value: "5", label: "Certifications" },
-  { value: "15+", label: "Skills & Tools" },
+export const navLinks = [
+  { label: "Home", href: "#home" },
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#internships" },
+  { label: "Education", href: "#education" },
+  { label: "Certifications", href: "#certifications" },
+  { label: "Contact", href: "#contact" },
+];
+
+export const heroMeta = [
+  { icon: "location", text: "Kharepatan, Maharashtra" },
+  { icon: "graduation", text: "B.E. Computer Engineering" },
+  { icon: "sparkle", text: "Open to work" },
+];
+
+export const marqueeTech = [
+  "Java", "Python", "C/C++", "JavaScript", "HTML5", "CSS3", "React",
+  "Node.js", "Express", "MongoDB", "MySQL", "Git", "GitHub", "VS Code",
+  "Android Studio", "Figma", "Responsive Design", "Problem Solving",
+];
+
+export const aboutPoints = [
+  { icon: "design", title: "UI/UX Design", desc: "Creating clean, responsive and user-friendly interfaces" },
+  { icon: "code", title: "Web Technologies", desc: "Building modern web apps with React, Node.js and more" },
+  { icon: "growth", title: "AI/ML Explorer", desc: "Learning machine learning through internships and projects" },
+  { icon: "team", title: "Problem Solver", desc: "Continuously learning and solving real-world challenges" },
 ];
 
 export const education = [
   {
     degree: "B.E. in Computer Engineering",
-    school: "Yashwantrao Bhonsale Institute of Technology, Sawantwadi",
-    status: "Pursuing (2026)",
-    grade: "Current CGPA: 7.91",
+    school: "Yashwantrao Bhonsale Institute of Technology (YBIT), Sawantwadi",
+    status: "Pursuing",
+    duration: "2024 – 2027",
+    grade: "CGPA: 7.91 / 10",
     detail:
-      "Final year student currently specialising in web development, databases, data structures and software engineering.",
+      "Currently pursuing Bachelor of Engineering in Computer Engineering with focus on web development, databases, data structures and software engineering.",
   },
   {
-    degree: "Diploma in Computer Engineering",
+    degree: "Diploma in Computer Science & Engineering",
     school: "Government Polytechnic, Malvan",
     status: "Completed",
+    duration: "2021 – 2024",
     grade: "77.66%",
-    detail: "Completed the diploma with 77.66% — without any KT or backlogs.",
+    detail: "Completed diploma with 77.66% — without any KT or backlogs.",
   },
   {
     degree: "Secondary School (SSC)",
     school: "Hometown, Kharepatan",
     status: "Completed",
+    duration: "2021",
     grade: "83.80%",
     detail: "Completed 10th standard from my hometown Kharepatan with 83.80%.",
   },
@@ -86,126 +96,159 @@ export const education = [
 
 export const skills = [
   {
-    category: "Frontend",
-    note: "Languages & UI",
-    icon: "code",
-    items: ["HTML5", "CSS3", "JavaScript", "React (Basic)", "Responsive Design"],
-  },
-  {
-    category: "Backend & Database",
-    note: "Servers & Data",
-    icon: "database",
-    items: ["Node.js (Basic)", "MongoDB", "REST APIs"],
-  },
-  {
     category: "Programming",
-    note: "Core & DSA",
+    note: "Languages & DSA",
     icon: "terminal",
-    items: ["Python", "Java (Basic)", "Problem Solving", "OOP Concepts"],
+    items: ["Java", "Python", "C/C++", "JavaScript", "SQL"],
   },
   {
-    category: "Tools & Soft Skills",
-    note: "Workflow & Mindset",
+    category: "Web Development",
+    note: "Frontend & Backend",
+    icon: "code",
+    items: ["HTML5", "CSS3", "React", "Node.js", "Express", "Vite"],
+  },
+  {
+    category: "Database",
+    note: "Data Storage",
+    icon: "database",
+    items: ["MongoDB", "MySQL"],
+  },
+  {
+    category: "Libraries & Technologies",
+    note: "Data & ML",
     icon: "wrench",
-    items: ["Android Studio", "VS Code", "Antigravity", "GitHub", "Software Development", "Self Learning", "Adaptability", "Good Listener", "Quick Learner"],
-  },
-];
-
-export const resumeBars = [
-  { label: "JavaScript & Frontend", value: 85 },
-  { label: "Python", value: 82 },
-  { label: "Responsive Design", value: 88 },
-  { label: "Problem Solving", value: 78 },
-  { label: "Node.js & MongoDB", value: 70 },
-];
-
-export const resumeTags = [
-  "Quick Learner", "Self Starter", "Adaptable", "Good Listener", "Detail Oriented",
-];
-
-export const internships = [
-  {
-    role: "AI Intern",
-    company: "Codec Technology (Online)",
-    period: "Online · 1 Month",
-    tags: ["Python", "AI / ML"],
-    points: [
-      "Worked on AI-based tasks and applied machine learning concepts on real-world mini problems.",
-      "Learned to document, present and demo AI workflows in a remote team setup.",
-    ],
+    items: ["Pandas", "NumPy", "Matplotlib", "scikit-learn"],
   },
   {
-    role: "Cyber Security Intern",
-    company: "Codec Technology (Online)",
-    period: "Online · 1 Month",
-    tags: ["Security", "Networking"],
-    points: [
-      "Gained practical exposure to cyber security fundamentals, common threats and protective tools.",
-      "Performed hands-on security labs and shared findings with the mentor.",
-    ],
+    category: "Tools & Platforms",
+    note: "Workflow",
+    icon: "wrench",
+    items: ["Git", "GitHub", "VS Code", "Android Studio", "Figma"],
+  },
+  {
+    category: "Design & Other",
+    note: "UI/UX & Soft Skills",
+    icon: "design",
+    items: ["Responsive Web Design", "UI Design", "User Experience", "Problem Solving", "Self Learning"],
   },
 ];
 
 export const projects = [
   {
-    title: "Aashirwad Cakes — Online Cake Website",
-    category: "Full-Stack",
-    tags: ["React", "HTML", "CSS", "JavaScript"],
+    title: "College ERP System",
+    category: "Web",
+    tags: ["React", "Node.js", "MongoDB", "Express"],
     description:
-      "A responsive online ordering website built with React for Aashirwad Cakes — product showcase, order flow and a clean, mobile-friendly interface.",
-    links: { type: "external", label: "Live Demo" },
+      "A digital College ERP system designed to simplify and manage academic and administrative activities through a centralized platform.",
+    featured: true,
+    badge: "Major Project",
+    github: null,
+    live: null,
   },
   {
-    title: "Motive — Stress Relief App",
-    category: "Mobile",
-    tags: ["Python", "Flutter", "Android"],
+    title: "Aashirwad Cakes Website",
+    category: "Web",
+    tags: ["React", "Vite", "Node.js", "Express", "MongoDB", "Mongoose"],
     description:
-      "A mobile app built with Python and Flutter that helps users manage stress with guided breathing, mood tracking and motivating content.",
-    links: { type: "code", label: "Source Code" },
+      "A modern cake ordering website for a home baker with product browsing, user registration/login, ordering and admin management features.",
+    github: null,
+    live: null,
   },
   {
-    title: "Botpress Chatbot",
-    category: "Python / AI",
-    tags: ["Botpress", "AI", "Chatbot"],
+    title: "StressDetect — AI Based Stress Relief App",
+    category: "AI/ML",
+    tags: ["Android Studio", "Java", "Firebase", "AI/ML"],
     description:
-      "A conversational chatbot built with Botpress that automates Q&A and guides users through common queries with a friendly flow.",
-    links: { type: "code", label: "Source Code" },
+      "An Android application focused on stress awareness and personalized wellness suggestions using emotion detection and questionnaire-based interaction.",
+    github: null,
+    live: null,
+  },
+];
+
+export const projectFilters = ["All", "Web", "AI/ML"];
+
+export const internships = [
+  {
+    role: "AI Intern",
+    company: "Codec Technologies India",
+    period: "Nov – Dec 2025 · 1 Month",
+    tags: ["AI/ML", "Python", "Learning"],
+    points: [
+      "Explored core AI and machine learning concepts through guided learning and practical assignments.",
+      "Worked with Python-based AI tasks to strengthen problem-solving, logic building and analytical thinking.",
+      "Gained exposure to real-world AI workflows and how they are applied in modern software solutions.",
+    ],
   },
   {
-    title: "Personal Firewall",
-    category: "Security",
-    tags: ["Networking", "Security", "Rules"],
-    description:
-      "A personal firewall prototype that monitors and controls network traffic with custom allow/block rules, built during my cyber security training.",
-    links: { type: "code", label: "Source Code" },
+    role: "Cyber Security Intern",
+    company: "Codec Technologies India — AICTE & ICAC Approved",
+    period: "Jun – Jul 2026 · 1 Month",
+    tags: ["Cyber Security", "Networking", "Information Security"],
+    points: [
+      "Developed practical understanding of cybersecurity fundamentals, security best practices and digital risk awareness.",
+      "Worked on security-oriented learning modules and hands-on labs to understand network and system vulnerabilities.",
+      "Improved my ability to think critically about safe system design, attack surfaces and defensive strategies.",
+    ],
+  },
+  {
+    role: "Lenovo LEAP NextGen Scholar Program — AI",
+    company: "Lenovo, BharatCares & Skill India",
+    period: "2026",
+    tags: ["Artificial Intelligence", "Career Development", "A Grade"],
+    points: [
+      "Participated in a structured AI learning program focused on real-world applications and emerging technologies.",
+      "Strengthened knowledge of artificial intelligence concepts through guided sessions and practical exposure.",
+      "Built confidence in applying AI learning to projects, problem-solving and future technology roles.",
+    ],
+  },
+  {
+    role: "DSA Training Participant",
+    company: "Self-paced learning / technical training",
+    period: "2025",
+    tags: ["DSA", "Problem Solving", "Logic"],
+    points: [
+      "Focused on data structures and algorithm fundamentals to improve coding efficiency and analytical thinking.",
+      "Strengthened problem-solving skills through practice on arrays, strings, searching, sorting and logic-based exercises.",
+      "Built a stronger foundation for technical interviews, coding challenges and project development.",
+    ],
   },
 ];
 
 export const certifications = [
   {
-    title: "Java Programming — NPTEL",
-    issuer: "NPTEL",
-    tags: ["Java"],
+    title: "Programming in Java — NPTEL",
+    issuer: "NPTEL (National Programme on Technology Enhanced Learning)",
+    date: "Oct 2025",
+    tags: ["Java", "OOP", "Data Structures"],
+    image: "https://media.licdn.com/dms/image/v2/D5622AQF5MsgPrV2vLA/feedshare-shrink_800/B56Zq6.AkrI8Ak-/0/1764073416532?e=2147483647&v=beta&t=KcYqLHgCSZd2IH-BL5SNVVgW6ocJd57DwBZZ_azLE1E",
   },
   {
-    title: "DSA Training Program (10 Days)",
-    issuer: "Yashwantrao Bhonsale Institute of Technology, by Prashant Jha Sir",
-    tags: ["DSA", "Problem Solving"],
+    title: "AI Internship Certificate",
+    issuer: "Codec Technologies India",
+    date: "Nov – Dec 2025",
+    tags: ["AI", "Python", "Machine Learning"],
+    image: "https://media.licdn.com/dms/image/v2/D4D22AQGt14UM21se5w/feedshare-shrink_800/B4DZtgHFjHHQAg-/0/1766844030267?e=2147483647&v=beta&t=JLrcSWQxHI2bQs6ZHF8-FBb-8zVMqNu7OT1Ipn9MHAw",
+  },
+  {
+    title: "Cyber Security Internship",
+    issuer: "Codec Technologies India — AICTE & ICAC Approved",
+    date: "Jun – Jul 2026",
+    tags: ["Cyber Security", "Networking", "Information Security"],
+    image: "https://media.licdn.com/dms/image/v2/D4D22AQFPG9EZEQDzRg/feedshare-image-high-res/B4DZ9goVZfGkAY-/0/1784032614229?e=2147483647&v=beta&t=DJtD0CoH2oCzlFsEi-aDUsStkSI-GTppp3q-R3rb3_g",
+  },
+  {
+    title: "Lenovo LEAP NextGen Scholar Program — AI",
+    issuer: "Lenovo, BharatCares & Skill India",
+    date: "2026",
+    tags: ["Artificial Intelligence", "60+ Hours", "A Grade"],
+    image: "https://media.licdn.com/dms/image/v2/D4E22AQGJj16hoHP9aw/feedshare-shrink_1280/B4EZ.pTAJ7JQAQ-/0/1785251759005?e=2147483647&v=beta&t=nrMwVtI2hset0MOqHefIL_-U2R_ELXu6zNyoLJbpgUg",
   },
   {
     title: "Python Training — KLIC",
     issuer: "KLIC",
+    date: "2025",
     tags: ["Python"],
-  },
-  {
-    title: "AI Internship Certificate",
-    issuer: "Codec Technology",
-    tags: ["AI", "Python"],
-  },
-  {
-    title: "Cyber Security Internship Certificate",
-    issuer: "Codec Technology",
-    tags: ["Security"],
+    image: "/certs/klic-python.svg",
   },
 ];
 

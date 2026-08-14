@@ -1,9 +1,9 @@
 import { skills, marqueeTech } from "../data/portfolio";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
-import { CodeIcon, DatabaseIcon, TerminalIcon, WrenchIcon } from "./Icons";
+import { CodeIcon, DatabaseIcon, TerminalIcon, WrenchIcon, DesignIcon } from "./Icons";
 
-const catIcons = { code: CodeIcon, database: DatabaseIcon, terminal: TerminalIcon, wrench: WrenchIcon };
+const catIcons = { code: CodeIcon, database: DatabaseIcon, terminal: TerminalIcon, wrench: WrenchIcon, design: DesignIcon };
 
 export default function Skills() {
   return (

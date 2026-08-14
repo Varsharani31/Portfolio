@@ -3,10 +3,10 @@ import { contact } from "../data/portfolio";
 import { web3formsKey } from "../config";
 import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
-import { MailIcon, PhoneIcon, LocationIcon, LinkedinIcon, GithubIcon, CodeIcon, CheckIcon } from "./Icons";
+import { MailIcon, PhoneIcon, LocationIcon, LinkedinIcon, GithubIcon, CheckIcon } from "./Icons";
 
 const itemIcons = { mail: MailIcon, phone: PhoneIcon, location: LocationIcon };
-const socialIcons = { linkedin: LinkedinIcon, github: GithubIcon, code: CodeIcon };
+const socialIcons = { linkedin: LinkedinIcon, github: GithubIcon };
 
 export default function Contact() {
   const [status, setStatus] = useState("");
