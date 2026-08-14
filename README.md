@@ -49,27 +49,6 @@ It includes sections for:
 * Vite
 * npm
 
-## 📂 Project Structure
-
-```text
-varsharani-portfolio/
-│
-├── public/
-│   └── assets/
-│
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── sections/
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-│
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
-```
 
 ## 🚀 Getting Started
 
