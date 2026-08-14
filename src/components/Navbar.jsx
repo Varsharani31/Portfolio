@@ -7,6 +7,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("home");
 
+  const menuLinks = [...navLinks, { label: "Resume", href: "#resume" }];
+
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
     onScroll();
@@ -47,11 +49,11 @@ export default function Navbar() {
         </a>
 
         <nav className={`nav-links ${open ? "open" : ""}`}>
-          {navLinks.map((link) => (
+          {(open ? menuLinks : navLinks).map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className={active === link.href.slice(1) ? "active" : ""}
+              className={`${active === link.href.slice(1) ? "active" : ""} ${link.href === "#resume" ? "mobile-resume-link" : ""}`.trim()}
               onClick={() => setOpen(false)}
             >
               {link.label}
